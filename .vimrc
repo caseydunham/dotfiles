@@ -1,4 +1,6 @@
 set nocompatible
+let mapleader=","
+
 set showcmd
 filetype plugin indent on
 set autoread
@@ -52,6 +54,7 @@ if has("gui_running")
     end
 end
 
+nnoremap <leader>n :NERDTreeToggle<CR> 
 nnoremap <F9> :set nonumber!<CR>
 
 
