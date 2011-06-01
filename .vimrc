@@ -38,7 +38,7 @@ set hlsearch
 set incsearch
 
 set guioptions-=T
-set guioptions-=M
+set guioptions-=m
 
 if has("gui_running")
     colorscheme vividchalk
