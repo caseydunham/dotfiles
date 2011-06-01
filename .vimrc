@@ -20,9 +20,24 @@ set wildmode=list:longest
 syntax enable
 
 set number
+set cursorline
+set nowrap
+set linebreak
+set autoindent
+set smartindent
+set tabstop=4
+set softtabstop=4
+set expandtab
 
-colorscheme elflord 
+set ignorecase
+set smartcase
+set smarttab
+set hlsearch
+set incsearch
+
 set guioptions-=T
+set guioptions-=M
+
 if has("win32") || has("win64")
 	set guifont=Consolas:h10
 else
