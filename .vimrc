@@ -20,6 +20,8 @@ set wildmode=list:longest
 syntax enable
 
 set number
+set numberwidth=1
+set nostartofline
 set cursorline
 set nowrap
 set linebreak
@@ -28,20 +30,23 @@ set smartindent
 set tabstop=4
 set softtabstop=4
 set expandtab
+set smarttab
 
 set ignorecase
 set smartcase
-set smarttab
 set hlsearch
 set incsearch
 
 set guioptions-=T
 set guioptions-=M
 
-if has("win32") || has("win64")
-	set guifont=Consolas:h10
-else
-	set guifont=Droid\ Sans\ Mono\ 10
+if has("gui_running")
+    colorscheme vividchalk
+    if has("win32") || has("win64")
+        set guifont=Consolas:h10
+    else
+        set guifont=Droid\ Sans\ Mono\ 10
+    end
 end
 
 nnoremap <F9> :set nonumber!<CR>
