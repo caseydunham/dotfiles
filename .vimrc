@@ -50,6 +50,5 @@ if has("gui_running")
 end
 
 nnoremap <F9> :set nonumber!<CR>
-nnoremap <silent> <C-t> :tabnew<CR>
 
 
