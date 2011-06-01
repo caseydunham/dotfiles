@@ -37,10 +37,13 @@ set smartcase
 set hlsearch
 set incsearch
 
-set guioptions-=T
-set guioptions-=m
+set foldmethod=indent
+set foldlevel=99
 
 if has("gui_running")
+    set guioptions-=T
+    set guioptions-=m
+
     colorscheme vividchalk
     if has("win32") || has("win64")
         set guifont=Consolas:h10
