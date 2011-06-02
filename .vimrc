@@ -57,4 +57,4 @@ end
 nnoremap <leader>n :NERDTreeToggle<CR> 
 nnoremap <F9> :set nonumber!<CR>
 
-
+let g:pydiction_location = '~/.vim/ftplugin/pydiction/complete-dict'
